@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="css/home.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<header>
+	<div class="main">
+		<div class="logo">	
+				<img src="logo.png">
+		</div>
+	</div>
+
+	<div class="login-page">
+	<div class="form">
+		<form class ="register-form">
+		<input type="text" placeholder="user name"/>
+		<input type="text" placeholder="email id"/>
+		<input type="text" placeholder="password"/>
+		<button> Register</button>
+		<p class="message">Already Registered? <a href="#">Login</a></p>
+		
+		</form>
+		<form class="Login-form">
+		<input type="text" placeholder="user name"/>
+		<input type="password" placeholder="password"/>	
+		<button>Login</button>
+		<p class="message">Not Registered? <a href="#" >Register </a></p>
+	</form>
+	</div>
+    </div>
+    <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+
+    <script>
+    	$('.message a').click(function(){
+    	$('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+    });
+    </script>
+</header>
+</body>
+</html>
+
+

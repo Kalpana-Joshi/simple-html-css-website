@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About</title>
+	<style>
+		.aboutus{
+	
+			padding-top: 150px;
+			padding-bottom: 150px;
+			text-align: center;
+			background-attachment: fixed;
+		}
+		h1{
+			font-size: 40px;
+			text-align: center;
+			padding-right: 5px;
+			padding-top: 70px;
+		}
+		.abt{
+			width: 90%;
+			margin: auto;
+			padding-top: 50px;
+		}
+		.us{
+			position: relative;
+			font-size: 20px;
+			text-align: justify;
+			font-family: cursive;
+			color: white;
+		}
+		a{
+			text-decoration: none;
+			color: white;
+			font-weight: bold;
+			font-size:20px;
+		}
+		a:hover{
+			text-decoration: underline;
+		}
+	</style>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<header>
+	<div class="main">
+		<div class="logo">	
+				<img src="logo.png">
+		</div>
+	</div>
+
+<section class="aboutus">
+		<h1 style="color:white;">About Us</h1>
+		<div class="abt">
+		<style type="text/css">
+			body
+			{
+				background-image: 
+			}
+		</style>
+
+		<p  class="us">
+			Welcome to <b> NICCO HOTEL </b>. Nicco Hotel is a small independent family run hotel in Baneshor, Kathmandu. It was established as a start-up business in June 4, 2020 with a mission to introduce Farwest Food to the people of Kathmandu. 
+			Nicco Hotel now in it's fourth year currently provides training and employment oppurtunities to over 20 Nepalese staffs. Nicco Hotel aspired to become one of the best hotel and want to fulfill the needs of people by providing unique dishes. Also it want to create more jobs and help the Nepalese economy.
+		</p>
+		<p id = "more" style="display:none"  class="us"> We aim to offer you comfortable surroundings, great food and excellent service to make your stay truly enjoyable. Even budget of our hotel is so convenient so that everyone could afford. The Hotel also has been an active	supporter of social activities, providing support to aspiring entrepreneurs and encouraging local youth activities.
+ 			Please take a look through our web site where you will find most of the information you need. Call us to discuss your hotel reservation,  dining plans or function requirements. 
+ 			<br>We look forward to welcoming you soon. 
+ 			<br>Proprietors: <b>Sandesh Pant and Kalpana Joshi</b></p>
+
+ 		<a href="#" onclick="toggleText(this, 'more'); return false;">Read More</a> 
+ 	</div>
+
+</section>
+		
+		<!--Javascript code -->
+
+		<script type="text/javascript">
+			function toggleText(btn, id) {
+				var e= document.getElementById(id);
+				if(e.style.display == 'block'){
+					e.style.display = 'none';
+					btn.innerHTML = "Read More";
+				}
+				else{
+					e.style.display = 'block';
+					btn.innerHTML  = "Show Less";
+				}
+			}
+		</script>
+</header>
+</body>
+</html>
